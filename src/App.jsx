@@ -3,6 +3,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Books from './pages/Books';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
           <li>
             <Link to="/contact" className="text-blue-600 hover:text-blue-800 transition">Contact</Link>
           </li>
+           <li>
+            <Link to="/books" className="text-blue-600 hover:text-blue-800 transition">Books</Link>
+          </li>
         </ul>
       </nav>
 
@@ -26,6 +30,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/books" element={<Books />} />
         </Routes>
       </main>
     </div>
